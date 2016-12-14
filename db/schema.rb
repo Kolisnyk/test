@@ -77,6 +77,13 @@ ActiveRecord::Schema.define(version: 20161025120810) do
     t.index ["reset_password_token"], name: "index_drivers_on_reset_password_token", unique: true, using: :btree
   end
 
+  create_table "order_drivers", force: :cascade do |t|
+    t.integer  "order_id"
+    t.integer  "driver_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "orders", force: :cascade do |t|
     t.string   "phone"
     t.string   "start_point"
@@ -87,10 +94,10 @@ ActiveRecord::Schema.define(version: 20161025120810) do
     t.integer  "dispatcher_id"
     t.integer  "passengers"
     t.boolean  "baggage"
-    t.datetime "created_at",                         null: false
-    t.datetime "updated_at",                         null: false
+    t.datetime "created_at",                    null: false
+    t.datetime "updated_at",                    null: false
     t.string   "email"
-    t.string   "status",        default: "incoming"
+    t.string   "status",        default: "new"
     t.string   "decline_order"
   end
 
