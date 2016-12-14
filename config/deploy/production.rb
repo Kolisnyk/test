@@ -2,7 +2,7 @@
 # ======================
 # Defines a single server with a list of roles and multiple properties.
 # You can define all roles on a single server, or split them:
-server ENV['PRODUCTION_IP'] || '139.59.140.162', port: 22,
+server ENV['PRODUCTION_IP'] || '46.101.201.125', port: 22,
                                                  roles: [:web, :app, :db],
                                                  primary: true
 
