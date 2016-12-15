@@ -1,5 +1,5 @@
 # Change these
-set :repo_url,        'git@github.com:rakvium/sloboda-supersonic-taxi.git'
+set :repo_url,        'git@github.com:Kolisnyk/test.git'
 set :application,     'sloboda-supersonic-taxi'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
