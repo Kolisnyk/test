@@ -1,2 +1,4 @@
-GMAIL_USERNAME: ''
-GMAIL_PASSWORD: ''
+production:
+  SET_BY_FIGARO: 'production'
+  GMAIL_USERNAME: 'supersonic.taxi@gmail.com'
+  GMAIL_PASSWORD: 'sloboda123'

@@ -9,6 +9,7 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="col-sm-4 col-sm-offset-4">
       <%= f.label :phone, 'Номер телефона' %><br />
+      <input type="text" pattern="[0-9]*" placeholder="0987654321" 
       <%= f.text_field :phone, autofocus: true %>
     </div>
 
